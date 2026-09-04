@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Protocolo 03: Ecosistema Abisal</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <div id="ui">
+      <div id="start-screen">
+        <h1>ECOSISTEMA ABISAL</h1>
+        <p>Sistema de Osciladores Acoplados</p>
+        <button id="start-btn">INICIAR INMERSIÓN</button>
+      </div>
+      <div id="hud" style="display: none;">
+        <div class="hud-text">
+          <p>ESTADO: <span id="estado-txt">DESORDEN</span></p>
+          <p>COHERENCIA (R): <span id="r-val">0.00</span></p>
+          <p>ACOPLAMIENTO (K): <span id="k-val">0.00</span></p>
+        </div>
+        <div class="hud-instructions">
+          <p>[ MOUSE X ] Modificar influencia (K)</p>
+          <p>[ CLICK EN CRIATURA ] Perturbar fase</p>
+          <p>[ DRAG ] Rotar cámara</p>
+        </div>
+      </div>
+    </div>
+    <div id="app"></div>
+    <script type="module" src="/main.ts"></script>
+  </body>
+</html>
